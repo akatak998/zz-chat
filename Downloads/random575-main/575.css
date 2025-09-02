@@ -1,0 +1,65 @@
+html {
+  height:100%;
+}
+body {
+  margin        : 0 auto;
+  min-height    : 100vh;
+  font-size     : xx-large;
+  display       : flex;
+  flex-direction: column;
+  overflow      : hidden;
+}
+.content {
+  position : relative;
+  flex     : 1;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.button {
+  position  : fixed;
+  bottom    : 0px;
+  left      : 380px;
+  cursor    : pointer;
+  width     : 150px;
+  height    : 250px;
+  z-index   : 100;
+  background: none;
+  border    : none;
+ }
+.image {
+  position: relative;
+  bottom  : -230px;
+  right   : 190px;
+  z-index : -1;
+  width   : 180%;
+  height: auto;
+}
+.image2 {
+  position: relative;
+  bottom  : -180px;
+  width   : 50%;
+  height  : 50%;
+  right   : 160px;
+}
+.explanation {
+  position: relative;
+  top  : 0px;
+  left    : 35px;
+}
+ #first_words,
+ #second_words,
+ #last_words {
+  writing-mode    : vertical-rl;
+  text-orientation: upright;
+  position        : absolute;
+  top             : 350px;
+ }
+#first_words {
+  left: 60%;
+}
+#second_words {
+  left: calc(50% - 100px);
+}
+#last_words {
+  left: calc(40% - 200px);
+}
