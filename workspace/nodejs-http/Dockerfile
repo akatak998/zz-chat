@@ -13,4 +13,5 @@ ENV TZ=Asia/Tokyo
 
 WORKDIR /app
 COPY . /app
+RUN chmod +x run.sh
 CMD ["sh", "run.sh"]
