@@ -1,0 +1,30 @@
+{
+  "name": "nn-chat",
+  "version": "1.0.0",
+  "description": "NNチャット",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^6.19.3",
+    "cookies": "0.9.1",
+    "dayjs": "1.11.10",
+    "dotenv": "^17.4.2",
+    "http-auth": "^4.2.0",
+    "pg": "^8.20.0",
+    "pug": "3.0.3"
+  },
+  "devDependencies": {
+    "@prisma/prisma-schema-wasm": "^7.8.0-6.3c6e192761c0362d496ed980de936e2f3cebcd3a",
+    "@types/pg": "^8.20.0",
+    "prisma": "^6.19.3"
+  },
+  "resolutions": {
+    "postgres-array": "3.0.4",
+    "@prisma/debug": "7.8.0"
+  }
+}
