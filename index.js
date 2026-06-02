@@ -1,7 +1,7 @@
 'use strict';
 const http = require('node:http');
 const auth = require('http-auth');
-import router from './lib/router.js';
+const router = require('./lib/router');
 
 const basic = auth.basic({
   realm: 'Enter username and password.',
