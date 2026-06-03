@@ -44,11 +44,11 @@ function handleStyleCssFile(req, res) {
   res.end(file);
 }
 
-function handleNnChatJsFile(req, res) {
+function handleZzChatJsFile(req, res) {
   res.writeHead(200, {
     'Content-Type': 'text/javascript',
   });
-  const file = fs.readFileSync('./public/nn-chat.js');
+  const file = fs.readFileSync('./public/zz-chat.js');
   res.end(file);
 }
 
@@ -57,7 +57,7 @@ function handleNotFound(req, res) {
     'Content-Type': 'text/html; charset=utf-8'
   });
   res.write('<p>ページがみつかりません</p>');
-  res.write('<p><a href="/posts">NNチャット</a></p>');
+  res.write('<p><a href="/posts">ZZチャット</a></p>');
   res.end();
 }
 
@@ -73,7 +73,7 @@ module.exports = {
   handleChangeTheme,
   handleFavicon,
   handleStyleCssFile,
-  handleNnChatJsFile,
+  handleZzChatJsFile,
   handleNotFound,
   handleBadRequest,
 };
